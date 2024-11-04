@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Section -->
+    <header class="home">
+        <h1>Welcome to Movie Buff Central</h1>
+        <p>Your ultimate fan page for <strong>Spider-Man: No Way Home</strong></p>
+        <img src="spiderman-poster.jpg" alt="Spider-Man No Way Home Poster" class="poster-image">
+    </header>
+
+    <!-- Character Bios Section -->
+    <section class="character-bios">
+        <h2>Character Bios</h2>
+        <div class="character">
+            <img src="spiderman.jpg" alt="Spider-Man">
+            <h3>Peter Parker (Spider-Man)</h3>
+            <p>The hero who tries to protect everyone he loves. Faces multi-dimensional threats in No Way Home.</p>
+        </div>
+        <div class="character">
+            <img src="doctor-strange.jpg" alt="Doctor Strange">
+            <h3>Doctor Strange</h3>
+            <p>A powerful sorcerer who attempts to help Peter with a spell, leading to unintended consequences.</p>
+        </div>
+        <div class="character">
+            <img src="green-goblin.jpg" alt="Green Goblin">
+            <h3>Green Goblin</h3>
+            <p>A villain from another universe with a personal vendetta against Spider-Man.</p>
+        </div>
+    </section>
+
+    <!-- Movie Trailers Section -->
+    <section class="trailers">
+        <h2>Movie Trailers</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JfVOs4VSpmA" 
+                title="Spider-Man: No Way Home Trailer" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Quote of the Day Section -->
+    <section class="quote-of-the-day">
+        <h2>Quote of the Day</h2>
+        <p id="quote">"With great power, there must also come great responsibility."</p>
+        <button onclick="generateQuote()">New Quote</button>
+    </section>
+
+    <!-- Trivia Quiz Section -->
+    <section class="trivia-quiz">
+        <h2>Trivia Quiz</h2>
+        <p>Question: <span id="question">Who is the actor portraying Peter Parker in this movie?</span></p>
+        <input type="text" id="answer" placeholder="Type your answer here">
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <p id="result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
